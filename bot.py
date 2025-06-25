@@ -51,5 +51,6 @@ async def on_ready():
     channel = bot.get_channel(channel_id)
     if channel:
         await channel.send("🧭 活動場所を選んでください：", view=ActivityView())
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))  # トークンは環境変数から読み取る！
 
-bot.run(os.getenv("MTM4NzQ2MzEzNDQxOTIyMjU2OQ.GGs-f8.FCD1QT2PkrmYh7OgURBrR_kxzJ9Z-9--bjYX3s")  # ←Botトークンをここに
